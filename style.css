@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .7;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(210,29,204,0.9643207624846813) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+table{
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 500px;
+    text-align: center;
+    background-color: #fafafa;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px ;
+
+}
+
+th{
+    background-color: rgb(220, 11, 165);
+    color: #fafafa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+tr:nth-child(odd){
+    background-color: #eeeeee;
+}
+
+tr:nth-child(odd):hover{
+    background-color: #eeeeee;
+    color:#000;
+    transform: scale(2);
+    transition: transform 3000ms ease-in;
+}
